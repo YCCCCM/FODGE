@@ -1,0 +1,18 @@
+Need python3.7!!! and Windows!!!
+NameError: name 'FbxAnimCurve' is not defined
+FbxAnimCurve
+
+Download Autodesk FBX SDK
+https://aps.autodesk.com/developer/overview/fbx-sdk
+
+Find FBX Python SDK
+MUST DOWNLOAD FBX SDK 2020.3.2 Python !!!
+win：https://www.autodesk.com/content/dam/autodesk/www/adn/fbx/2020-3-2/fbx202032_fbxpythonsdk_win.exe
+# Linux：https://www.autodesk.com/content/dam/autodesk/www/adn/fbx/2020-3-2/fbx202032_fbxpythonsdk_linux.tar.gz
+# Do not use the Linux system!!!
+
+And you need to put the binary Python file into the site-packages of your env environment.
+
+Install in C:\Program Files\Autodesk\FBX\FBX Python SDK\2020.3.2\lib, and find the corresponding architecture.
+
+Move FbxCommon.py to SMPL-to-FBX
