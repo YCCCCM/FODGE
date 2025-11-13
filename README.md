@@ -30,7 +30,7 @@ The train and inference example build this repo was validated on:
 * 64-bit Python 3.10
 * PyTorch 2.9.0 or PyTorch 2.3.1
 * 96 GB RAM or 256 GB RAM
-* 1 x NVIDIA Geforce RTX5090, CUDA 12.8 toolkit or 8 x NVIDIA Geforce A800/L40, CUDA 12.4 toolkit
+* 1 x NVIDIA Geforce RTX5090, CUDA 12.8 toolkit or 8 x NVIDIA A800/L40, CUDA 12.4 toolkit
 
 
 
