@@ -1,7 +1,7 @@
 <div align="center">
-<h2><font color="red"> 🕺🕺🕺 FODGE 💃💃💃 </font></center> <br> <center>HIGH-FIDELITY DANCE GENERATION VIA FULL-BODY OPTIMIZATION (ICASSP 2026)</h2>
+<h2><font color="red"> 👠👠👠 FODGE 👠👠👠 </font></center> <br> <center>HIGH-FIDELITY DANCE GENERATION VIA FULL-BODY OPTIMIZATION</h2>
 
-Xiaoying Huang, Sanyi Zhang, Qin Zhang, Xiaoxuan Guo, Long Ye
+Xiaoying Huang, Sanyi Zhang, Qin Zhang, Xiaoxuan Guo and Long Ye
 
 <a href='https://yccccm.github.io/FODGE-page/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> 
 <a href=''><img src='https://img.shields.io/badge/ArXiv-0000.00000-red'></a> 
@@ -12,14 +12,14 @@ Xiaoying Huang, Sanyi Zhang, Qin Zhang, Xiaoxuan Guo, Long Ye
 ## Abstract
 Dance is an important connection of artistic expression, yet automatically creating new choreography especially music-driven high-fidelity dance generation still faces significant challenges. Existing approaches primarily enhance physical realism by optimizing foot–ground contact, but some local parts are still unsatisfactory which reduce expressiveness, such as overlook gliding steps (e.g., moonwalk), unnatural arm and head movements. To address these issues, we propose FODGE, a music-conditioned diffusion-based framework with full-body optimization. FODGE integrates a Full-body Refinement Block (FRB) and a Full-body Optimization Post-processing module (FOP). FRB introduces and learns the relationship between arm and foot movements as an optimization clue to refine human motions, thereby enhancing artistic expressiveness. And we further employ a training-free FOP to optimize the dance sequence from a full-body perspective, improving visualization effects. Experimental results demonstrate that FODGE significantly outperforms existing baselines in motion quality while achieving a better balance between physical plausibility and artistic expressiveness..</b>
 
-## 🍻🍻🍻 Setup Environment
+## Setup Environment
 Our method is trained using cuda12.1, pytorch-lightning 1.9.5 on 4 Nvidia L40 GPUs.
 ``` 
 conda env create -f dancedm.yaml
 or
 pip install requirements_5090_cu128.txt
 ```
-* We recommend Linux for performance and compatibility reasons. Windows will probably work, but is not officially supported.
+* We recommend Linux for performance and compatibility reasons. Windows is OK, please see `dancedm_win.yaml`.
 * 64-bit Python 3.10
 * PyTorch 2.3.1
 * At least 48 GB RAM per GPU
@@ -28,9 +28,9 @@ pip install requirements_5090_cu128.txt
 The train and inference example build this repo was validated on:
 * Ubuntu 24.04 LTS
 * 64-bit Python 3.10
-* PyTorch 2.9.0
-* 96 GB RAM
-* 1 x NVIDIA Geforce RTX5090, CUDA 12.8 toolkit
+* PyTorch 2.9.0 or PyTorch 2.3.1
+* 96 GB RAM or 256 GB RAM
+* 1 x NVIDIA Geforce RTX5090, CUDA 12.8 toolkit or 8 x NVIDIA Geforce A800/L40, CUDA 12.4 toolkit
 
 
 
@@ -91,25 +91,18 @@ to convert motions into FBX files, which can be imported into Blender and retarg
 
 
 
-## 🎼🎼🎼 Citation 
-If you think this project is helpful, please leave a star⭐️⭐️⭐️ and cite our paper:
+## Citation 
+If you think this project is helpful, please cite our paper:
 ```bibtex
-@inproceedings{li2024lodge,
-  title={Lodge: A Coarse to Fine Diffusion Network for Long Dance Generation Guided by the Characteristic Dance Primitives},
-  author={Li, Ronghui and Zhang, Yuxiang and Zhang, Yachao and Zhang, Hongwen and Guo, Jie and Zhang, Yan and Liu, Yebin and Li, Xiu},
-  booktitle={IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR)},
-  year={2024},
-}
-@inproceedings{li2023finedance,
-  title={FineDance: A Fine-grained Choreography Dataset for 3D Full Body Dance Generation},
-  author={Li, Ronghui and Zhao, Junfan and Zhang, Yachao and Su, Mingyang and Ren, Zeping and Zhang, Han and Tang, Yansong and Li, Xiu},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-  pages={10234--10243},
-  year={2023}
+@inproceedings{huang2026fodge,
+  title={FODGE: HIGH-FIDELITY DANCE GENERATION VIA FULL-BODY OPTIMIZATION},
+  author={Xiaoying Huang, Sanyi Zhang, Qin Zhang, Xiaoxuan Guo and Long Ye},
+  booktitle={underview},
+  year={2026},
 }
 ``` 
 
 
-## 👯👯👯 Acknowledgements
+## Acknowledgements
 
-This basic dance diffusion borrows from [EDGE](https://github.com/Stanford-TML/EDGE), the evaluate code borrows from  [Bailando](https://github.com/lisiyao21/Bailando), the README.md style borrows from [follow-your-pose](https://github.com/mayuelala/FollowYourPose). Thanks the authors for sharing their code and models.
+This basic dance diffusion borrows from [EDGE](https://github.com/Stanford-TML/EDGE), [FineDance](https://github.com/li-ronghui/FineDance) and [LODGE](https://github.com/li-ronghui/LODGE).
