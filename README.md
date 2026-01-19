@@ -7,7 +7,7 @@ Xiaoying Huang, Sanyi Zhang, Qin Zhang, Xiaoxuan Guo and Long Ye
 <a href=''><img src='https://img.shields.io/badge/ArXiv-0000.00000-red'></a> 
 </div>
 
-Code organizing in progress！！！
+The code is currently being finalized; once accepted by the journal, we will fully open-source FODGE+DanceKD！！！
 
 ## Abstract
 Dance is an important connection of artistic expression, yet automatically creating new choreography especially music-driven high-fidelity dance generation still faces significant challenges. Existing approaches primarily enhance physical realism by optimizing foot–ground contact, but some local parts are still unsatisfactory which reduce expressiveness, such as overlook gliding steps (e.g., moonwalk), unnatural arm and head movements. To address these issues, we propose FODGE, a music-conditioned diffusion-based framework with full-body optimization. FODGE integrates a Full-body Refinement Block (FRB) and a Full-body Optimization Post-processing module (FOP). FRB introduces and learns the relationship between arm and foot movements as an optimization clue to refine human motions, thereby enhancing artistic expressiveness. And we further employ a training-free FOP to optimize the dance sequence from a full-body perspective, improving visualization effects. Experimental results demonstrate that FODGE significantly outperforms existing baselines in motion quality while achieving a better balance between physical plausibility and artistic expressiveness..</b>
